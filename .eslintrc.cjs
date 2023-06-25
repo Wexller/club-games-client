@@ -12,9 +12,6 @@ module.exports = {
   extends: ['@nuxtjs/eslint-config-typescript', 'plugin:prettier/recommended'],
   plugins: [],
   rules: {
-    'quotes': ['error', 'single'],
-    'prettier/prettier': ['error', { singleQuote: true }],
-
     'vue/no-multiple-template-root': 0,
     'vue/valid-template-root': 0
   },

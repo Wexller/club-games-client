@@ -3,4 +3,4 @@ export default {
   schedule: 'Расписание',
   archive: 'Архив',
   games: 'Игры',
-};
+}
