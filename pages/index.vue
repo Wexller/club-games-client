@@ -1,4 +1,17 @@
-<script setup></script>
+<script setup lang="ts">
+import { useStrapiAuth, useStrapiUser } from '#imports'
+
+const { login } = useStrapiAuth()
+const user = useStrapiUser()
+
+const fn = async () => {
+  await login({ identifier: 'test@mail.ru', password: '123456' })
+
+  console.log(user._object.$sstrapi_user)
+}
+
+fn()
+</script>
 
 <template>
   <h1>Club games</h1>
