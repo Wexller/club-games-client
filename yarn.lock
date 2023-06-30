@@ -1029,6 +1029,29 @@
     unimport "^3.0.8"
     untyped "^1.3.2"
 
+"@nuxt/kit@npm:@nuxt/kit-edge@latest":
+  version "3.6.2-28133904.669e9bcf"
+  resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.6.2-28133904.669e9bcf.tgz#34bb4d3fc8a20320949f452f590d317affbc2908"
+  integrity sha512-9qsVhoiuaDAWM1REOb9EZISzl0kXtwsgcCIz5u15Lk5H5aYd9l+oEjUtDFMBIEJ0XxJi3iJ6S7rg0Z+8bCwS2Q==
+  dependencies:
+    "@nuxt/schema" "npm:@nuxt/schema-edge@3.6.2-28133904.669e9bcf"
+    c12 "^1.4.2"
+    consola "^3.2.2"
+    defu "^6.1.2"
+    globby "^13.2.0"
+    hash-sum "^2.0.0"
+    ignore "^5.2.4"
+    jiti "^1.18.2"
+    knitwork "^1.0.0"
+    mlly "^1.4.0"
+    pathe "^1.1.1"
+    pkg-types "^1.0.3"
+    scule "^1.0.0"
+    semver "^7.5.3"
+    unctx "^2.3.1"
+    unimport "^3.0.11"
+    untyped "^1.3.2"
+
 "@nuxt/postcss8@^1.1.3":
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@nuxt/postcss8/-/postcss8-1.1.3.tgz#a7f8f6f2a664430bbdd3b175498eb693e0b1b351"
@@ -1071,6 +1094,21 @@
     std-env "^3.3.3"
     ufo "^1.1.2"
     unimport "^3.0.8"
+    untyped "^1.3.2"
+
+"@nuxt/schema@npm:@nuxt/schema-edge@3.6.2-28133904.669e9bcf":
+  version "3.6.2-28133904.669e9bcf"
+  resolved "https://registry.yarnpkg.com/@nuxt/schema-edge/-/schema-edge-3.6.2-28133904.669e9bcf.tgz#7086eb689942074190f61bd8c16edbc96d88cbf9"
+  integrity sha512-bmQM0LxFvRDGqBaP0zQsRpFl5VqEZ5QrK+94Q6mwJ5fv4Hl0GWpN1LxfJdyb2WQa9Bak/9klqXiRfNVV+CKzwQ==
+  dependencies:
+    defu "^6.1.2"
+    hookable "^5.5.3"
+    pathe "^1.1.1"
+    pkg-types "^1.0.3"
+    postcss-import-resolver "^2.0.0"
+    std-env "^3.3.3"
+    ufo "^1.1.2"
+    unimport "^3.0.11"
     untyped "^1.3.2"
 
 "@nuxt/telemetry@^2.2.0":
@@ -1399,6 +1437,18 @@
   version "0.25.24"
   resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.25.24.tgz#8c7688559979f7079aacaf31aa881c3aa410b718"
   integrity sha512-XJfwUVUKDHF5ugKwIcxEgc9k8b7HbznCp6eUfWgu710hMPNIO4aw4/zB5RogDQz8nd6gyCDpU9O/m6qYEWY6yQ==
+
+"@tanstack/table-core@8.9.3":
+  version "8.9.3"
+  resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.9.3.tgz#991da6b015f6200fdc841c48048bee5e197f6a46"
+  integrity sha512-NpHZBoHTfqyJk0m/s/+CSuAiwtebhYK90mDuf5eylTvgViNOujiaOaxNDxJkQQAsVvHWZftUGAx1EfO1rkKtLg==
+
+"@tanstack/vue-table@^8.9.3":
+  version "8.9.3"
+  resolved "https://registry.yarnpkg.com/@tanstack/vue-table/-/vue-table-8.9.3.tgz#6412e773fbeebebe6d23285cae8e46a4964b2516"
+  integrity sha512-Ca9+XZogYOi99rBqIoEJKKIfS0hNWcHnIh8pDUy2xbBk396AtJaO/tvP6B9qsxZF6j4szHzx8TeRveHPpZ+bBw==
+  dependencies:
+    "@tanstack/table-core" "8.9.3"
 
 "@tootallnate/once@2":
   version "2.0.0"
@@ -2648,6 +2698,11 @@ consola@^3.0.1, consola@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/consola/-/consola-3.1.0.tgz#dfdfa62ceb68bc1f06e4a76ad688566bd8813baf"
   integrity sha512-rrrJE6rP0qzl/Srg+C9x/AE5Kxfux7reVm1Wh0wCjuXvih6DqZgqDZe8auTD28fzJ9TF0mHlSDrPpWlujQRo1Q==
+
+consola@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/consola/-/consola-3.2.2.tgz#be9b295e1e556355a09ac475b4394016144e0c32"
+  integrity sha512-r921u0vbF4lQsoIqYvSSER+yZLPQGijOHrYcWoCNVNBZmn/bRR+xT/DgerTze/nLD9TTGzdDa378TVhx7RDOYg==
 
 console-control-strings@^1.0.0, console-control-strings@^1.1.0:
   version "1.1.0"
@@ -5953,6 +6008,15 @@ nuxi@3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
+nuxt-svgo@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/nuxt-svgo/-/nuxt-svgo-3.1.0.tgz#59f5645dff7ab5340e8a0ae2c3b1d9c3efa97db0"
+  integrity sha512-gqRYVUxN6kDJ2Hco/xLNUr56t665xdSwG78Ba/5o1TiYQLeIux1xErS4yR/1+ju/nIWj1DGwnBpDCw9GfX9QGA==
+  dependencies:
+    "@nuxt/kit" "npm:@nuxt/kit-edge@latest"
+    "@vue/compiler-sfc" "^3.2.47"
+    svgo "^3.0.2"
+
 nuxt@^3.5.2:
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-3.5.3.tgz#2997a62b8c1088c4b8eeae358838732f5dad0653"
@@ -7996,6 +8060,23 @@ unhead@1.1.27:
     "@unhead/schema" "1.1.27"
     "@unhead/shared" "1.1.27"
     hookable "^5.5.3"
+
+unimport@^3.0.11:
+  version "3.0.11"
+  resolved "https://registry.yarnpkg.com/unimport/-/unimport-3.0.11.tgz#64b0e9dc508e1835737a2e333e75d7123db63120"
+  integrity sha512-UaaLu7TiqiEwjm5a9FGsL8RL87U65wyr1jBeIAAvLChgJZRMTTkknU9bkWjBsVGutXLT2Yq8/dPyWXSC3/ELRg==
+  dependencies:
+    "@rollup/pluginutils" "^5.0.2"
+    escape-string-regexp "^5.0.0"
+    fast-glob "^3.2.12"
+    local-pkg "^0.4.3"
+    magic-string "^0.30.0"
+    mlly "^1.4.0"
+    pathe "^1.1.1"
+    pkg-types "^1.0.3"
+    scule "^1.0.0"
+    strip-literal "^1.0.1"
+    unplugin "^1.3.1"
 
 unimport@^3.0.7, unimport@^3.0.8:
   version "3.0.8"
