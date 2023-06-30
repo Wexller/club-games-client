@@ -9,7 +9,33 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/strapi',
+    [
+      'nuxt-svgo',
+      {
+        defaultImport: 'component',
+        svgoConfig: {
+          plugins: [
+            {
+              name: 'preset-default',
+              params: {
+                overrides: {
+                  inlineStyles: {
+                    onlyMatchedOnce: false,
+                  },
+                  removeDoctype: false,
+                  removeDimensions: false,
+                  removeViewBox: false,
+                  removeUselessStrokeAndFill: false,
+                },
+              },
+            },
+          ],
+        },
+      },
+    ],
   ],
+
+  css: ['@/assets/global.css'],
 
   runtimeConfig: {
     public: {

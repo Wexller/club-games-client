@@ -1,22 +1,32 @@
 <script setup lang="ts">
-import { useStrapiAuth, useStrapiUser } from '#imports'
+import { useAuth, useGames } from '#imports'
+import Table from '~/components/game-enrollments-table/Table.vue'
+import Section from '~/components/Section.vue'
 
-const { login } = useStrapiAuth()
-const user = useStrapiUser()
+const isAuthed = useAuth()
 
-const fn = async () => {
-  await login({ identifier: 'test@mail.ru', password: '123456' })
+const { findGames, findOneGame } = useGames()
 
-  console.log(user._object.$sstrapi_user)
-}
-
-fn()
+const slogan = 'Собирай друзей \n и побеждайте вместе'
 </script>
 
 <template>
-  <h1>Club games</h1>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi deserunt
-    enim est explicabo illo nisi obcaecati porro quod, rerum.
+  <Header />
+
+  <h1 class="text-center whitespace-pre-line mt-[169px]">{{ slogan }}</h1>
+  <p class="body1 text-center mt-4">
+    Забронируй место на нашу настольную игру прямо сейчас!
   </p>
+
+  <Section class="mt-[203px]" :heading="'Играют сейчас'">
+    <Table />
+  </Section>
+
+  <!--  <LoginForm v-if="!isAuthed" />-->
+
+  <!--  <button @click="findGames">Получить игры</button>-->
+
+  <!--  <Button variant="stroke">Войти <SvgoPlus /></Button>-->
 </template>
+
+<style scoped></style>

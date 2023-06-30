@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  @apply text-primary
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  tbody, thead, th, tr, td {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+
+  h2 {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  .body1{
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .body2{
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
