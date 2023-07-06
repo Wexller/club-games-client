@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import { FlexRender } from '@tanstack/vue-table'
+import { ColumnsData } from '~/components/game-enrollments-table/GameEnrollmentsTable.vue'
 
 type Props = {
-  getHeaderGroups: () => unknown
+  columnsData: ColumnsData[]
 }
 
 const props = defineProps<Props>()
@@ -10,23 +10,14 @@ const props = defineProps<Props>()
 
 <template>
   <thead class="bg-table-headRowBg px-3 rounded-lg text-gray">
-    <tr
-      v-for="headerGroup in props.getHeaderGroups()"
-      :key="headerGroup.id"
-      class="divide-x divide-solid space-x-3 body2 backdrop-blur-sm"
-    >
+    <tr class="divide-x divide-solid space-x-3 body2 backdrop-blur-sm">
       <th
-        v-for="header in headerGroup.headers"
-        :key="header.id"
+        v-for="column in props.columnsData"
+        :key="column.title"
         class="border-table-headerDivider font-medium px-3 py-4"
-        :colSpan="header.colSpan"
-        :style="{ width: header.column.getSize() + 'px' }"
+        :style="{ width: column.size + 'px' }"
       >
-        <FlexRender
-          v-if="!header.isPlaceholder"
-          :render="header.column.columnDef.header"
-          :props="header.getContext()"
-        />
+        {{ column.title }}
       </th>
     </tr>
   </thead>

@@ -6,6 +6,7 @@ type Variant = 'fill' | 'stroke'
 type Props = {
   variant?: Variant
   disabled?: boolean
+  big?: boolean
 }
 
 const props = defineProps<Props>()
@@ -17,13 +18,14 @@ const isStroked = computed(() => props.variant === 'stroke')
 <template>
   <button
     :disabled="props.disabled"
+    :style="{ height: props.big ? '64px' : '40px' }"
     :class="{
       'bg-purple hover:bg-purpleHover active:bg-purpleActive disabled:bg-gray2 text-white':
         isFilled,
       'border border-purple active:border-purpleActive disabled:border-gray2 hover:text-purpleHover active:text-purpleActive disabled:text-gray2':
         isStroked,
     }"
-    class="flex space-x-2 text-body1 px-6 py-[9px] rounded-sm transition"
+    class="flex space-x-2 justify-center items-center px-6 py-[9px] rounded-sm transition"
   >
     <slot />
   </button>

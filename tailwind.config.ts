@@ -25,6 +25,7 @@ export default <Partial<Config>>{
       purple: 'rgba(130, 122, 233, 1)',
       purpleHover: 'rgba(162, 156, 238, 1)',
       purpleActive: 'rgba(100, 89, 248, 1)',
+      purpleLight: 'rgba(242, 241, 255, 1)',
       gray: 'rgba(102, 112, 133, 1)',
       gray2: 'rgba(196, 201, 216, 1)',
       table: {
