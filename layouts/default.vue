@@ -1,6 +1,7 @@
 <template>
-  <SvgoBackground class="absolute -z-10 w-full" />
+  <!--  <SvgoMainBackground class="absolute -z-10 w-full" />-->
   <div class="container">
+    <Header />
     <slot />
   </div>
 </template>

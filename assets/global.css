@@ -46,4 +46,8 @@
     font-size: 12px;
     line-height: 140%;
   }
+
+  .bg-svg{
+    @apply absolute left-0 top-0 -z-10
+  }
 }

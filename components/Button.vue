@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { computed } from '#imports'
-
 type Variant = 'fill' | 'stroke'
 
 type Props = {
@@ -11,8 +9,8 @@ type Props = {
 
 const props = defineProps<Props>()
 
-const isFilled = computed(() => props.variant === 'fill')
-const isStroked = computed(() => props.variant === 'stroke')
+const isFilled = props.variant === 'fill'
+const isStroked = props.variant === 'stroke'
 </script>
 
 <template>
