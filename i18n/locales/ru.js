@@ -1,6 +1,6 @@
 export default {
   main: 'Главная',
-  schedule: 'Расписание',
-  archive: 'Архив',
-  games: 'Игры',
+  schedule: 'Расписание игр',
+  archive: 'Архив игр',
+  games: 'Все игры',
 }

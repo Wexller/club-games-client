@@ -258,6 +258,13 @@
     "@babel/helper-plugin-utils" "^7.22.5"
     "@babel/plugin-syntax-typescript" "^7.22.5"
 
+"@babel/runtime@^7.21.0":
+  version "7.22.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.22.5.tgz#8564dd588182ce0047d55d7a75e93921107b57ec"
+  integrity sha512-ecjvYlnAaZ/KVneE/OdKYBYfgXV3Ptu6zQWmgEF7vwKhQnvVS6bjMD2XYgj+SNvQ1GfK/pjgokfPkC/2CO8CuA==
+  dependencies:
+    regenerator-runtime "^0.13.11"
+
 "@babel/standalone@^7.21.3":
   version "7.22.5"
   resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.22.5.tgz#91a55e725e93d65241e0ccd8b0c3c7067258da3c"
@@ -1029,6 +1036,29 @@
     unimport "^3.0.8"
     untyped "^1.3.2"
 
+"@nuxt/kit@npm:@nuxt/kit-edge@latest":
+  version "3.6.2-28133904.669e9bcf"
+  resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.6.2-28133904.669e9bcf.tgz#34bb4d3fc8a20320949f452f590d317affbc2908"
+  integrity sha512-9qsVhoiuaDAWM1REOb9EZISzl0kXtwsgcCIz5u15Lk5H5aYd9l+oEjUtDFMBIEJ0XxJi3iJ6S7rg0Z+8bCwS2Q==
+  dependencies:
+    "@nuxt/schema" "npm:@nuxt/schema-edge@3.6.2-28133904.669e9bcf"
+    c12 "^1.4.2"
+    consola "^3.2.2"
+    defu "^6.1.2"
+    globby "^13.2.0"
+    hash-sum "^2.0.0"
+    ignore "^5.2.4"
+    jiti "^1.18.2"
+    knitwork "^1.0.0"
+    mlly "^1.4.0"
+    pathe "^1.1.1"
+    pkg-types "^1.0.3"
+    scule "^1.0.0"
+    semver "^7.5.3"
+    unctx "^2.3.1"
+    unimport "^3.0.11"
+    untyped "^1.3.2"
+
 "@nuxt/postcss8@^1.1.3":
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@nuxt/postcss8/-/postcss8-1.1.3.tgz#a7f8f6f2a664430bbdd3b175498eb693e0b1b351"
@@ -1071,6 +1101,21 @@
     std-env "^3.3.3"
     ufo "^1.1.2"
     unimport "^3.0.8"
+    untyped "^1.3.2"
+
+"@nuxt/schema@npm:@nuxt/schema-edge@3.6.2-28133904.669e9bcf":
+  version "3.6.2-28133904.669e9bcf"
+  resolved "https://registry.yarnpkg.com/@nuxt/schema-edge/-/schema-edge-3.6.2-28133904.669e9bcf.tgz#7086eb689942074190f61bd8c16edbc96d88cbf9"
+  integrity sha512-bmQM0LxFvRDGqBaP0zQsRpFl5VqEZ5QrK+94Q6mwJ5fv4Hl0GWpN1LxfJdyb2WQa9Bak/9klqXiRfNVV+CKzwQ==
+  dependencies:
+    defu "^6.1.2"
+    hookable "^5.5.3"
+    pathe "^1.1.1"
+    pkg-types "^1.0.3"
+    postcss-import-resolver "^2.0.0"
+    std-env "^3.3.3"
+    ufo "^1.1.2"
+    unimport "^3.0.11"
     untyped "^1.3.2"
 
 "@nuxt/telemetry@^2.2.0":
@@ -2649,6 +2694,11 @@ consola@^3.0.1, consola@^3.1.0:
   resolved "https://registry.yarnpkg.com/consola/-/consola-3.1.0.tgz#dfdfa62ceb68bc1f06e4a76ad688566bd8813baf"
   integrity sha512-rrrJE6rP0qzl/Srg+C9x/AE5Kxfux7reVm1Wh0wCjuXvih6DqZgqDZe8auTD28fzJ9TF0mHlSDrPpWlujQRo1Q==
 
+consola@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/consola/-/consola-3.2.2.tgz#be9b295e1e556355a09ac475b4394016144e0c32"
+  integrity sha512-r921u0vbF4lQsoIqYvSSER+yZLPQGijOHrYcWoCNVNBZmn/bRR+xT/DgerTze/nLD9TTGzdDa378TVhx7RDOYg==
+
 console-control-strings@^1.0.0, console-control-strings@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
@@ -2859,6 +2909,13 @@ data-uri-to-buffer@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/data-uri-to-buffer/-/data-uri-to-buffer-4.0.1.tgz#d8feb2b2881e6a4f58c2e08acfd0e2834e26222e"
   integrity sha512-0R9ikRb668HB7QDxT1vkpuUBtqc53YyAwMwGeUFKRojY/NWKvdZ+9UYtRfGmhqNbRkTSVpMbmyhXipFFv2cb/A==
+
+date-fns@^2.30.0:
+  version "2.30.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.30.0.tgz#f367e644839ff57894ec6ac480de40cae4b0f4d0"
+  integrity sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==
+  dependencies:
+    "@babel/runtime" "^7.21.0"
 
 debug@2.6.9:
   version "2.6.9"
@@ -3528,6 +3585,13 @@ eslint-plugin-unicorn@^44.0.2:
     semver "^7.3.7"
     strip-indent "^3.0.0"
 
+eslint-plugin-unused-imports@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unused-imports/-/eslint-plugin-unused-imports-2.0.0.tgz#d8db8c4d0cfa0637a8b51ce3fd7d1b6bc3f08520"
+  integrity sha512-3APeS/tQlTrFa167ThtP0Zm0vctjr4M44HMpeg1P4bK6wItarumq0Ma82xorMKdFsWpphQBlRPzw/pxiVELX1A==
+  dependencies:
+    eslint-rule-composer "^0.3.0"
+
 eslint-plugin-vue@^9.7.0:
   version "9.15.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-9.15.0.tgz#2bffe2b8a628ee438f983672a73cd89df455c461"
@@ -3540,6 +3604,11 @@ eslint-plugin-vue@^9.7.0:
     semver "^7.3.5"
     vue-eslint-parser "^9.3.0"
     xml-name-validator "^4.0.0"
+
+eslint-rule-composer@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-rule-composer/-/eslint-rule-composer-0.3.0.tgz#79320c927b0c5c0d3d3d2b76c8b4a488f25bbaf9"
+  integrity sha512-bt+Sh8CtDmn2OajxvNO+BX7Wn4CIWMpTRm3MaiKPCQcnnlm0CS2mhui6QaoeQugs+3Kj2ESKEEGJUdVafwhiCg==
 
 eslint-scope@^5.1.1:
   version "5.1.1"
@@ -5953,6 +6022,15 @@ nuxi@3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
+nuxt-svgo@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/nuxt-svgo/-/nuxt-svgo-3.1.0.tgz#59f5645dff7ab5340e8a0ae2c3b1d9c3efa97db0"
+  integrity sha512-gqRYVUxN6kDJ2Hco/xLNUr56t665xdSwG78Ba/5o1TiYQLeIux1xErS4yR/1+ju/nIWj1DGwnBpDCw9GfX9QGA==
+  dependencies:
+    "@nuxt/kit" "npm:@nuxt/kit-edge@latest"
+    "@vue/compiler-sfc" "^3.2.47"
+    svgo "^3.0.2"
+
 nuxt@^3.5.2:
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-3.5.3.tgz#2997a62b8c1088c4b8eeae358838732f5dad0653"
@@ -6980,6 +7058,11 @@ redis-parser@^3.0.0:
   dependencies:
     redis-errors "^1.0.0"
 
+regenerator-runtime@^0.13.11:
+  version "0.13.11"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
+  integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
+
 regexp-tree@^0.1.24, regexp-tree@~0.1.1:
   version "0.1.27"
   resolved "https://registry.yarnpkg.com/regexp-tree/-/regexp-tree-0.1.27.tgz#2198f0ef54518ffa743fe74d983b56ffd631b6cd"
@@ -7996,6 +8079,23 @@ unhead@1.1.27:
     "@unhead/schema" "1.1.27"
     "@unhead/shared" "1.1.27"
     hookable "^5.5.3"
+
+unimport@^3.0.11:
+  version "3.0.11"
+  resolved "https://registry.yarnpkg.com/unimport/-/unimport-3.0.11.tgz#64b0e9dc508e1835737a2e333e75d7123db63120"
+  integrity sha512-UaaLu7TiqiEwjm5a9FGsL8RL87U65wyr1jBeIAAvLChgJZRMTTkknU9bkWjBsVGutXLT2Yq8/dPyWXSC3/ELRg==
+  dependencies:
+    "@rollup/pluginutils" "^5.0.2"
+    escape-string-regexp "^5.0.0"
+    fast-glob "^3.2.12"
+    local-pkg "^0.4.3"
+    magic-string "^0.30.0"
+    mlly "^1.4.0"
+    pathe "^1.1.1"
+    pkg-types "^1.0.3"
+    scule "^1.0.0"
+    strip-literal "^1.0.1"
+    unplugin "^1.3.1"
 
 unimport@^3.0.7, unimport@^3.0.8:
   version "3.0.8"

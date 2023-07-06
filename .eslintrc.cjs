@@ -10,9 +10,11 @@ module.exports = {
     parser: '@typescript-eslint/parser',
   },
   extends: ['@nuxtjs/eslint-config-typescript', 'plugin:prettier/recommended'],
-  plugins: [],
+  plugins: ["unused-imports"],
   rules: {
-    'vue/no-multiple-template-root': 0,
-    'vue/valid-template-root': 0
+    "unused-imports/no-unused-imports": "error",
+    'vue/no-multiple-template-root': "off",
+    'vue/valid-template-root': "off",
+    'vue/no-setup-props-destructure': 'warn'
   },
 }

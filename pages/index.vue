@@ -1,22 +1,52 @@
 <script setup lang="ts">
-import { useStrapiAuth, useStrapiUser } from '#imports'
+import { useAuth, useGames } from '#imports'
+import Button from '~/components/Button.vue'
+import GameEnrollmentsTable from '~/components/game-enrollments-table/GameEnrollmentsTable.vue'
+import Section from '~/components/Section.vue'
 
-const { login } = useStrapiAuth()
-const user = useStrapiUser()
+const isAuthed = useAuth()
 
-const fn = async () => {
-  await login({ identifier: 'test@mail.ru', password: '123456' })
+const { findGames, findOneGame } = useGames()
 
-  console.log(user._object.$sstrapi_user)
-}
-
-fn()
+const slogan = 'Собирай друзей \n и побеждайте вместе'
 </script>
 
 <template>
-  <h1>Club games</h1>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi deserunt
-    enim est explicabo illo nisi obcaecati porro quod, rerum.
+  <Header />
+
+  <h1 class="text-center whitespace-pre-line mt-[169px]">{{ slogan }}</h1>
+  <p class="body1 text-center mt-4">
+    Забронируй место на нашу настольную игру прямо сейчас!
   </p>
+
+  <Section class="mt-[203px]" :heading="'Играют сейчас'">
+    <GameEnrollmentsTable />
+  </Section>
+
+  <Section :heading="'Ближайшие игры'">
+    <GameEnrollmentsTable />
+  </Section>
+
+  <div class="flex flex-col items-center justify-center mt-[145px]">
+    <h2>Попробуй новый формат общения</h2>
+
+    <div class="flex items-center space-x-[37px]">
+      <span class="whitespace-pre-line">{{
+        'Выбери удобное для тебя \n время в нашем расписании'
+      }}</span>
+      <h2>окунувшись в <b>мир игр</b></h2>
+    </div>
+
+    <Button class="mt-10 w-[440px]" variant="fill" wide
+      >Полное расписание</Button
+    >
+  </div>
+
+  <!--  <LoginForm v-if="!isAuthed" />-->
+
+  <!--  <button @click="findGames">Получить игры</button>-->
+
+  <!--  <Button variant="stroke">Войти <SvgoPlus /></Button>-->
 </template>
+
+<style scoped></style>

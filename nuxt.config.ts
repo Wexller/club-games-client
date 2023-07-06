@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import i18n from './config/modules/i18n'
+import svgo from './config/modules/svgo'
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -9,7 +10,10 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/strapi',
+    svgo,
   ],
+
+  css: ['@/assets/global.css'],
 
   runtimeConfig: {
     public: {
