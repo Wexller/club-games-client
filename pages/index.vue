@@ -12,7 +12,7 @@ const slogan = 'Собирай друзей \n и побеждайте вмес�
 </script>
 
 <template>
-  <Header />
+  <SvgoBackground class="bg-svg" />
 
   <h1 class="text-center whitespace-pre-line mt-[169px]">{{ slogan }}</h1>
   <p class="body1 text-center mt-4">
@@ -37,7 +37,7 @@ const slogan = 'Собирай друзей \n и побеждайте вмес�
       <h2>окунувшись в <b>мир игр</b></h2>
     </div>
 
-    <Button class="mt-10 w-[440px]" variant="fill" wide
+    <Button class="mt-10 w-[440px]" variant="fill" big
       >Полное расписание</Button
     >
   </div>

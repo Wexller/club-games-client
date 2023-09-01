@@ -28,13 +28,13 @@ watchEffect(() => {
 
 <template>
   <form class="form" @submit.prevent="handleSubmit">
-    <label for="identifier">Логин</label>
+    <label for="identifier">{{ $t('form.login') }}</label>
     <input id="identifier" v-model="identifier" type="text" />
 
-    <label for="password">Пароль</label>
+    <label for="password">{{ $t('form.password') }}</label>
     <input id="password" v-model="password" type="password" />
 
-    <button type="submit">Отправить</button>
+    <button type="submit">{{ $t('form.submit') }}</button>
   </form>
 </template>
 

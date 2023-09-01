@@ -4,7 +4,9 @@
   <nav>
     <ul class="flex space-x-[50px]">
       <li>
-        <NuxtLink class="link" to="/schedule">{{ $t('schedule') }}</NuxtLink>
+        <NuxtLink class="link" to="/games/schedule">{{
+          $t('schedule')
+        }}</NuxtLink>
       </li>
       <li>
         <NuxtLink class="link" to="/archive">{{ $t('archive') }}</NuxtLink>

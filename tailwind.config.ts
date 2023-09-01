@@ -20,7 +20,7 @@ export default <Partial<Config>>{
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      primary: 'rgba(40, 13, 74, 1)',
+      primary: 'rgba(54, 48, 62, 1)я',
       white: 'rgba(255, 255, 255, 1)',
       purple: 'rgba(130, 122, 233, 1)',
       purpleHover: 'rgba(162, 156, 238, 1)',
