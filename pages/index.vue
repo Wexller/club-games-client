@@ -12,7 +12,7 @@ const slogan = 'Собирай друзей \n и побеждайте вмес�
 </script>
 
 <template>
-  <SvgoMainBackground class="bg-svg" />
+  <SvgoBackground class="bg-svg" />
 
   <h1 class="text-center whitespace-pre-line mt-[169px]">{{ slogan }}</h1>
   <p class="body1 text-center mt-4">
